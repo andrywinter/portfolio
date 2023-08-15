@@ -1,0 +1,6 @@
+@mixin fira($fz, $lh, $fw){
+    font-family: 'Fira Code', monospace;
+    font-size: $fz;
+    line-height: $lh;
+    font-weight: $fw;
+}

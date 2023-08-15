@@ -1,0 +1,88 @@
+.about {
+    padding: 109px 0 112px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 75px;
+        height: 155px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        border: 1px solid;
+        transform: translateY(-50%);
+
+        @media(max-width:1200px){
+            display: none;
+        }
+
+
+    }
+
+    &::after {
+        content: "";
+        width: 103px;
+        height: 103px;
+        position: absolute;
+        right: 0px;
+        bottom: 80px;
+        background: url(../img/points-about.svg) no-repeat center;
+        
+        
+    }
+
+
+    &-title {
+        &::after {
+            max-width: 326px;
+            width: 100%;
+            height: 1px;
+
+            @media (max-width:590px) {
+                max-width: 240px;
+            }
+            
+            @media (max-width:450px) {
+                max-width: 45%;
+            }
+
+            @media (max-width:390px) {
+                max-width: 35%;
+            }
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media(max-width:980px){
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+    }
+
+    &-content {
+        max-width: 516px;
+        width: 100%;
+    }
+
+    &-img {
+        width: 340px;
+    }
+
+    &-text {
+        margin-bottom: 27px;
+        margin-top: 23px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &-link {
+        width: 148px;
+        text-align: center;
+    }
+}

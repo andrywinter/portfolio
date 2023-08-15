@@ -1,11 +1,11 @@
 ### AL ###
 #Template for AL projects for Dynamics 365 Business Central
 #launch.json folder
-.vscode/
+# .vscode/
 #Cache folder
-scss/
+# scss/
 #Symbols folder
-css/*.map
+# css/*.map
 #Snapshots folder
 .snapshots/
 #Testing Output folder

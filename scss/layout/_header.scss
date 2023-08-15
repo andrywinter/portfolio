@@ -1,0 +1,142 @@
+.header {
+    height: 66px;
+
+    &-fixed{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 32px 0 8px;
+        background: $bg-dark;
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        
+
+        @media (max-width:600px) {
+            align-items: center;
+        }
+
+        @media (max-width:450px) {
+            padding: 15px 0 8px;
+        }
+
+    }
+
+    &-logo {
+        display: block;
+        width: 72px;
+        color: $color-secondary;
+        background: url(../img/logo.svg) no-repeat left center;
+        padding-left: 24px;
+        background-size: 16px;
+        text-transform: capitalize;
+        font-weight: 700;
+        line-height: 21px;
+    }
+
+    .nav {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        gap: 32px;
+        align-items: center;
+
+        @media(max-width:1150px) {
+            position: absolute;
+            z-index: 2;
+            background: $bg-dark;
+            top: -100%;
+            right: 0;
+            bottom: 100%;
+            left: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            transition: .5s linear;
+
+            &.active {
+                bottom: 0;
+                height: 110vh;
+                top: 0;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        gap: 32px;
+
+        @media (max-width:1150px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .link {
+        line-height: 21px;
+        display: flex;
+        transition: .3s linear;
+
+        &::before {
+            content: "#";
+            color: $color-violete;
+        }
+
+        &.active,
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    .drop-lang {
+        display: none;
+    }
+
+    .switch-lang {
+        width: 37px;
+        position: relative;
+        background: url(../img/lang-switch.svg) no-repeat right center;
+        cursor: pointer;
+        padding: 5px;
+
+        &:hover {
+            .drop-lang {
+                display: block;
+                position: absolute;
+                top: 22px;
+
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+
+        @media (max-width:1150px) {
+            display: block;
+            position: relative;
+            z-index: 5;
+            width: 60px;
+            height: 60px;
+            background: url(../img/burger.svg) no-repeat center;
+            transition: .3s ease;
+
+            &.active {
+                background: url(../img/close.svg) no-repeat center;
+
+            }
+        }
+
+        @media (max-width:450px) {
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+}

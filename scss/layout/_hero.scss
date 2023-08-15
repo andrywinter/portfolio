@@ -1,0 +1,55 @@
+.hero {
+    padding: 62px 0 112px 0;
+
+    &-wrapper {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &-content {
+        max-width: 537px;
+        width: 100%;
+    }
+
+    &-title {
+        color: $color-secondary;
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0 0 32px 0;
+
+        span{
+            color: $color-violete;
+        }
+    }
+
+    &-link {
+        width: 148px;
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    &-img {
+        max-width: 457px;
+        width: 100%;
+
+        figcuption {
+            max-width: 402px;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            padding: 10px 10px 10px 34px;
+            background: url(../img/hero-reg.svg) no-repeat left 8px center;
+            border: 1px solid $color-primary;
+
+            span{
+                color: $color-secondary;
+                font-weight: 500;
+            }
+
+        }
+    }
+
+}
