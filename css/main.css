@@ -399,7 +399,7 @@ main {
 }
 
 .header {
-  height: 66px;
+  height: 100px;
 }
 .header-fixed {
   position: fixed;
@@ -722,140 +722,6 @@ main {
   border: 1px solid #ABB2BF;
 }
 
-.complete-apps {
-  position: relative;
-}
-.complete-apps::after {
-  content: "";
-  width: 44px;
-  height: 84px;
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  background: url(../img/points-project.svg) no-repeat center;
-}
-@media (max-width: 1140px) {
-  .complete-apps::after {
-    content: none;
-  }
-}
-.complete-apps::before {
-  content: "";
-  width: 68px;
-  height: 155px;
-  position: absolute;
-  right: 0;
-  bottom: 80px;
-  border: 1px solid;
-}
-@media (max-width: 1200px) {
-  .complete-apps::before {
-    content: none;
-  }
-}
-.complete-apps-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 74px 0 48px 0;
-}
-.complete-apps-title {
-  margin: 0;
-  flex: 1;
-}
-.complete-apps-link {
-  color: #fff;
-  padding-left: 16px;
-}
-.complete-apps-gallery {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 81px;
-}
-.complete-apps .gallery-block {
-  border: #ABB2BF 1px solid;
-  width: 330px;
-}
-.complete-apps .gallery-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  border-bottom: 1px solid;
-  padding: 8px;
-}
-.complete-apps .gallery-title {
-  display: flex;
-  padding: 16px;
-  font-size: 24px;
-  font-weight: 500;
-  color: #fff;
-}
-.complete-apps .gallery-subtitle {
-  padding: 0 14px 0 14px;
-}
-.complete-apps .gallery-block-link {
-  display: flex;
-  padding: 16px;
-  gap: 16px;
-}
-.complete-apps .inner-link {
-  padding: 8px 16px;
-}
-.complete-apps .gallery-link {
-  color: #ABB2BF;
-  border: 1px solid #ABB2BF;
-}
-
-.small-projects-title {
-  margin-bottom: 48px;
-}
-.small-projects-gallery {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 81px;
-}
-.small-projects .small-gallery-block {
-  border: #ABB2BF 1px solid;
-  width: 330px;
-}
-.small-projects .gallery-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  border-bottom: 1px solid;
-  padding: 8px;
-}
-.small-projects .gallery-title {
-  display: flex;
-  padding: 16px;
-  font-size: 24px;
-  font-weight: 500;
-  color: #fff;
-}
-.small-projects .gallery-subtitle {
-  padding: 0 14px 0 14px;
-  display: flex;
-  line-height: 20px;
-}
-.small-projects .gallery-block-link {
-  display: flex;
-  padding: 16px;
-  gap: 16px;
-}
-.small-projects .inner-link {
-  padding: 8px 16px;
-}
-.small-projects .gallery-link {
-  color: #ABB2BF;
-  border: 1px solid #ABB2BF;
-}
-
 .skills {
   padding: 109px 0;
 }
@@ -1083,6 +949,184 @@ main {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+.project-page {
+  position: relative;
+}
+.project-page-top {
+  margin: 53px 0 68px;
+}
+.project-page-title {
+  position: relative;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+.project-page-title span {
+  display: block;
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.project-page-title::before {
+  content: "/";
+  color: #C778DD;
+}
+.project-page::after {
+  content: "";
+  width: 44px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  background: url(../img/points-project.svg) no-repeat center;
+}
+@media (max-width: 1140px) {
+  .project-page::after {
+    content: none;
+  }
+}
+.project-page::before {
+  content: "";
+  width: 68px;
+  height: 155px;
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  border: 1px solid;
+}
+@media (max-width: 1200px) {
+  .project-page::before {
+    content: none;
+  }
+}
+.project-page-link {
+  color: #fff;
+  padding-left: 16px;
+}
+.project-page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 81px;
+}
+@media (max-width: 1100px) {
+  .project-page-wrapper {
+    justify-content: center;
+  }
+}
+.project-page .gallery-block {
+  border: #ABB2BF 1px solid;
+  width: 330px;
+}
+@media (max-width: 390px) {
+  .project-page .gallery-block {
+    width: 100%;
+  }
+}
+.project-page .gallery-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid;
+  padding: 8px;
+}
+.project-page .gallery-title {
+  display: flex;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+.project-page .gallery-subtitle {
+  padding: 0 14px 0 14px;
+}
+.project-page .gallery-block-link {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+.project-page .inner-link {
+  padding: 8px 16px;
+}
+.project-page .gallery-link {
+  color: #ABB2BF;
+  border: 1px solid #ABB2BF;
+}
+.project-page .project-gallery-title {
+  margin-bottom: 48px;
+}
+
+.small-projects-title {
+  margin-bottom: 48px;
+}
+.small-projects-gallery {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 81px;
+}
+@media (max-width: 1100px) {
+  .small-projects-gallery {
+    justify-content: center;
+  }
+}
+.small-projects .small-gallery-block {
+  border: #ABB2BF 1px solid;
+  width: 330px;
+}
+@media (max-width: 390px) {
+  .small-projects .small-gallery-block {
+    width: 100%;
+  }
+}
+.small-projects .gallery-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid;
+  padding: 8px;
+}
+.small-projects .gallery-title {
+  display: flex;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+.small-projects .gallery-subtitle {
+  padding: 0 14px 0 14px;
+  display: flex;
+  line-height: 20px;
+}
+.small-projects .gallery-block-link {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+@media (max-width: 390px) {
+  .small-projects .gallery-block-link {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.small-projects .inner-link {
+  padding: 8px 16px;
+}
+@media (max-width: 390px) {
+  .small-projects .inner-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+.small-projects .gallery-link {
+  color: #ABB2BF;
+  border: 1px solid #ABB2BF;
 }
 
 .footer {

@@ -27,4 +27,8 @@ $(document).ready(function () {
             $(".btn-up").fadeOut()
         }
     })
+
+    // current year
+    $(".curr-year").text((new Date).getFullYear())
+
 });
