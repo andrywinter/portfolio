@@ -1183,4 +1183,24 @@ main {
 }
 .footer .copyright {
   text-align: center;
+}
+
+.about-page-top {
+  margin: 53px 0 68px;
+}
+.about-page-title {
+  position: relative;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+.about-page-title span {
+  display: block;
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-page-title::before {
+  content: "/";
+  color: #C778DD;
 }/*# sourceMappingURL=main.css.map */
