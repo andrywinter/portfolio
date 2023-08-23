@@ -1,7 +1,43 @@
 .about-page{
 
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 109px;
+        height: 49px;
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../img/points-about-page.svg) no-repeat center;
+
+        @media(max-width:1200px){
+            display: none;
+        }
+
+
+    }
+
+    &::after {
+        content: "";
+        width: 155px;
+        height: 155px;
+        position: absolute;
+        right: 0px;
+        top: 80px;
+        background: url(../img/Rectangle-about-page.svg) no-repeat center;
+        
+        
+    }
+
+
     &-top{
-        margin: 53px 0 68px;
+        margin: 53px 0 8px;
+    }
+
+    &-wrapper{
+        align-items: center;
     }
 
     &-title{

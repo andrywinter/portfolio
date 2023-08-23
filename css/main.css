@@ -399,7 +399,7 @@ main {
 }
 
 .header {
-  height: 100px;
+  height: 66px;
 }
 .header-fixed {
   position: fixed;
@@ -1185,8 +1185,38 @@ main {
   text-align: center;
 }
 
+.about-page {
+  position: relative;
+}
+.about-page::before {
+  content: "";
+  width: 109px;
+  height: 49px;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/points-about-page.svg) no-repeat center;
+}
+@media (max-width: 1200px) {
+  .about-page::before {
+    display: none;
+  }
+}
+.about-page::after {
+  content: "";
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  background: url(../img/Rectangle-about-page.svg) no-repeat center;
+}
 .about-page-top {
-  margin: 53px 0 68px;
+  margin: 53px 0 8px;
+}
+.about-page-wrapper {
+  align-items: center;
 }
 .about-page-title {
   position: relative;
