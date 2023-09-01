@@ -266,6 +266,7 @@ body {
   background: #282C33;
   color: #ABB2BF;
   min-height: 100vh;
+  min-width: 320px;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -725,16 +726,17 @@ main {
 .skills {
   padding: 109px 0;
 }
+@media (max-width: 590px) {
+  .skills {
+    padding: 0;
+  }
+}
 .skills-top {
   margin-bottom: 12px;
 }
 .skills-img {
-  display: block;
   max-width: 350px;
   width: 100%;
-}
-.skills-title {
-  margin: 0;
 }
 .skills-title::after {
   max-width: 240px;
@@ -754,11 +756,13 @@ main {
   }
 }
 .skills-education {
-  -moz-column-count: 3;
-       column-count: 3;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  max-width: 584px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 43px;
+  gap: 16px;
+  justify-content: flex-end;
 }
 @media (max-width: 980px) {
   .skills-education {
@@ -768,31 +772,13 @@ main {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 590px) {
-  .skills-education {
-    -moz-column-count: 1;
-         column-count: 1;
-    display: block;
-  }
-}
 .skills-block {
   width: 181px;
   border: 1px solid #ABB2BF;
-  margin-bottom: 16px;
 }
-.skills-block-container {
-  height: 100%;
-}
-@media (max-width: 980px) {
-  .skills-block-container {
-    height: auto;
-  }
-}
-@media (max-width: 590px) {
-  .skills-block-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 390px) {
+  .skills-block {
+    width: 80%;
   }
 }
 .skills-block-title {
@@ -885,6 +871,15 @@ main {
 .about-link {
   width: 148px;
   text-align: center;
+}
+.about-skils-page-wrapper {
+  display: flex;
+  padding: 48px 0 83px;
+  gap: 16px;
+}
+.about-skills-block {
+  border: 1px solid;
+  width: 192px;
 }
 
 .contacts {

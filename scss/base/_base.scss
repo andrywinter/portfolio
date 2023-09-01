@@ -28,6 +28,7 @@ body {
     background: $bg-dark;
     color: $color-primary;
     min-height: 100vh;
+    min-width: 320px;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;

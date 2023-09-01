@@ -85,4 +85,15 @@
         width: 148px;
         text-align: center;
     }
+
+    &-skils-page-wrapper {
+        display: flex;
+        padding: 48px 0 83px;;
+        gap: 16px;
+    }
+
+    &-skills-block {
+        border: 1px solid;
+        width: 192px;
+    }
 }
