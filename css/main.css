@@ -874,6 +874,7 @@ main {
 }
 .about-skils-page-wrapper {
   display: flex;
+  align-items: flex-start;
   padding: 48px 0 83px;
   gap: 16px;
 }
