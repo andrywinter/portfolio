@@ -92,6 +92,9 @@
         &:hover {
             color: $color-secondary;
         }
+        &.active{
+            pointer-events: none;
+        }
     }
 
     .drop-lang {

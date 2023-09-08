@@ -97,4 +97,55 @@
         border: 1px solid;
         width: 192px;
     }
+
+    &-facts{
+        position: relative;
+        padding-bottom: 162px;
+
+        &::before{
+            content: "";
+            width: 75px;
+            height: 155px;
+            border: 1px solid $color-primary;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+
+        &::after{
+            content: "";
+            width: 95px;
+            height: 103px;
+            background: url(../img/fun-points.svg) no-repeat center;
+            position: absolute;
+            bottom: 86px;
+            right: 0;
+        }
+    }
+
+    &-facts-title {
+        margin-bottom: 26px;
+    }
+
+    &-facts-wrapper {
+        display: flex;
+        gap: 155px;
+    }
+
+    &-facts-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        max-width: 610px;
+        width: 100%;
+
+        li{
+            border: 1px solid  $color-primary;
+            padding: 8px;
+        }
+    }
+
+    &-facts-img {
+        width: 178px;
+    }
 }

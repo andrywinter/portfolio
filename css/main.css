@@ -487,6 +487,9 @@ main {
 .header .link.active, .header .link:hover {
   color: #fff;
 }
+.header .link.active {
+  pointer-events: none;
+}
 .header .drop-lang {
   display: none;
 }
@@ -881,6 +884,49 @@ main {
 .about-skills-block {
   border: 1px solid;
   width: 192px;
+}
+.about-facts {
+  position: relative;
+  padding-bottom: 162px;
+}
+.about-facts::before {
+  content: "";
+  width: 75px;
+  height: 155px;
+  border: 1px solid #ABB2BF;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+.about-facts::after {
+  content: "";
+  width: 95px;
+  height: 103px;
+  background: url(../img/fun-points.svg) no-repeat center;
+  position: absolute;
+  bottom: 86px;
+  right: 0;
+}
+.about-facts-title {
+  margin-bottom: 26px;
+}
+.about-facts-wrapper {
+  display: flex;
+  gap: 155px;
+}
+.about-facts-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 610px;
+  width: 100%;
+}
+.about-facts-list li {
+  border: 1px solid #ABB2BF;
+  padding: 8px;
+}
+.about-facts-img {
+  width: 178px;
 }
 
 .contacts {
