@@ -1238,6 +1238,9 @@ main {
   font-size: 16px;
   font-weight: 400;
 }
+.contacts-page-wrapper {
+  display: flex;
+}
 
 .footer {
   border-top: 1px solid #ABB2BF;
