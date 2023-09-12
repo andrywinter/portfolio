@@ -1,4 +1,6 @@
 .contacts-page {
+
+    
     &-title {
         position: relative;
         color: #fff;
@@ -19,7 +21,79 @@
         }
     }
 
+    &-top {
+        margin-top: 53px;
+    }
+
     &-wrapper {
         display: flex;
+        justify-content: space-between;
+        padding: 46px 0 25px;
     }
+
+    &-text {
+        max-width: 505px;
+        width: 100%;
+        line-height: 26px;
+    }
+
+    &-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 11px;
+    }
+
+    &-block {
+        border: 1px solid;
+        padding: 16px;
+        width: 210px;
+
+        &:first-child{
+            width: 186px;
+        }
+
+        span {
+            color: $color-secondary;
+            font-weight: 500;
+        }
+    }
+
+    &-tags {
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            font-weight: 400;
+
+            svg {
+                width: 32px;
+                height: 32px;
+                fill: $color-primary;
+                transition: .2s ease;
+            }
+
+            &:hover {
+                svg {
+                    fill: $color-secondary;
+                }
+            }
+        }
+    }
+
+    &-block-title--first {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &-block-title--second {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+
+}
+
+section{
+    background: url();
 }

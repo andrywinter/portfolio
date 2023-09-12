@@ -1238,8 +1238,63 @@ main {
   font-size: 16px;
   font-weight: 400;
 }
+.contacts-page-top {
+  margin-top: 53px;
+}
 .contacts-page-wrapper {
   display: flex;
+  justify-content: space-between;
+  padding: 46px 0 25px;
+}
+.contacts-page-text {
+  max-width: 505px;
+  width: 100%;
+  line-height: 26px;
+}
+.contacts-page-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+.contacts-page-block {
+  border: 1px solid;
+  padding: 16px;
+  width: 210px;
+}
+.contacts-page-block:first-child {
+  width: 186px;
+}
+.contacts-page-block span {
+  color: #fff;
+  font-weight: 500;
+}
+.contacts-page-tags li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.contacts-page-tags li svg {
+  width: 32px;
+  height: 32px;
+  fill: #ABB2BF;
+  transition: 0.2s ease;
+}
+.contacts-page-tags li:hover svg {
+  fill: #fff;
+}
+.contacts-page-block-title--first {
+  display: block;
+  margin-bottom: 10px;
+}
+.contacts-page-block-title--second {
+  display: block;
+  margin-bottom: 16px;
+}
+
+section {
+  background: url();
 }
 
 .footer {
