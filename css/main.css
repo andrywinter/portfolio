@@ -961,6 +961,11 @@ main {
   font-weight: 500;
   line-height: 24px;
 }
+.contacts-text .contact-link {
+  width: 148px;
+  margin-top: 25px;
+  text-align: center;
+}
 .contacts-block {
   padding: 16px;
   width: 205px;
@@ -1221,6 +1226,24 @@ main {
   color: #C778DD;
 }
 
+.contacts-page {
+  position: relative;
+  padding-bottom: 84px;
+}
+.contacts-page::after {
+  content: "";
+  width: 75px;
+  height: 155px;
+  position: absolute;
+  right: 0;
+  bottom: 170x;
+  border: 1px solid #abb2bf;
+}
+@media (max-width: 1050px) {
+  .contacts-page::after {
+    content: none;
+  }
+}
 .contacts-page-title {
   position: relative;
   color: #fff;
@@ -1244,7 +1267,7 @@ main {
 .contacts-page-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 46px 0 25px;
+  margin: 46px 0 25px;
 }
 .contacts-page-text {
   max-width: 505px;
@@ -1292,9 +1315,23 @@ main {
   display: block;
   margin-bottom: 16px;
 }
-
-section {
-  background: url();
+.contacts-page-title--media {
+  margin-bottom: 22px;
+}
+.contacts-page-title--media::before {
+  content: "#";
+  color: #c778dd;
+}
+.contacts-page-media-list {
+  display: flex;
+  gap: 22px;
+}
+.contacts-page-media-list a {
+  background: url(../img/Twitter.svg) no-repeat left center;
+  line-height: 32px;
+  display: block;
+  width: 95px;
+  text-align: right;
 }
 
 .footer {

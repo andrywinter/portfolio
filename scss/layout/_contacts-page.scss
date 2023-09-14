@@ -1,6 +1,21 @@
 .contacts-page {
+    position: relative;
+    padding-bottom: 84px;
 
-    
+    &::after {
+        content: "";
+        width: 75px;
+        height: 155px;
+        position: absolute;
+        right: 0;
+        bottom: 170x;
+        border: 1px solid #abb2bf;
+
+        @media (max-width:1050px) {
+            content: none;
+        }
+    }
+
     &-title {
         position: relative;
         color: #fff;
@@ -28,7 +43,7 @@
     &-wrapper {
         display: flex;
         justify-content: space-between;
-        padding: 46px 0 25px;
+        margin: 46px 0 25px;
     }
 
     &-text {
@@ -48,7 +63,7 @@
         padding: 16px;
         width: 210px;
 
-        &:first-child{
+        &:first-child {
             width: 186px;
         }
 
@@ -91,9 +106,27 @@
         margin-bottom: 16px;
     }
 
+    &-title--media {
+        margin-bottom: 22px;
 
-}
+        &::before {
+            content: "#";
+            color: #c778dd;
+        }
 
-section{
-    background: url();
+    }
+
+    &-media-list {
+        display: flex;
+        gap: 22px;
+
+        a {
+            background: url(../img/Twitter.svg)no-repeat left center;
+            line-height: 32px;
+            display: block;
+            width: 95px;
+            text-align: right;
+        }
+    }
+
 }
