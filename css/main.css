@@ -898,6 +898,11 @@ main {
   top: 60px;
   left: 0;
 }
+@media (max-width: 1200px) {
+  .about-facts::before {
+    display: none;
+  }
+}
 .about-facts::after {
   content: "";
   width: 95px;
@@ -1196,12 +1201,17 @@ main {
 }
 .about-page::after {
   content: "";
-  width: 155px;
+  width: 55px;
   height: 155px;
   position: absolute;
   right: 0px;
   top: 80px;
-  background: url(../img/Rectangle-about-page.svg) no-repeat center;
+  border: 1px solid;
+}
+@media (max-width: 1200px) {
+  .about-page::after {
+    display: none;
+  }
 }
 .about-page-top {
   margin: 53px 0 8px;
@@ -1236,12 +1246,32 @@ main {
   height: 155px;
   position: absolute;
   right: 0;
-  bottom: 170x;
+  top: 170px;
   border: 1px solid #abb2bf;
+}
+@media (max-width: 1200px) {
+  .contacts-page::after {
+    display: none;
+  }
 }
 @media (max-width: 1050px) {
   .contacts-page::after {
     content: none;
+  }
+}
+.contacts-page::before {
+  content: "";
+  width: 109px;
+  height: 49px;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../img/points-about-page.svg) no-repeat center;
+}
+@media (max-width: 1200px) {
+  .contacts-page::before {
+    display: none;
   }
 }
 .contacts-page-title {

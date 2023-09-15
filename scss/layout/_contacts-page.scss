@@ -8,11 +8,30 @@
         height: 155px;
         position: absolute;
         right: 0;
-        bottom: 170x;
+        top: 170px;
         border: 1px solid #abb2bf;
+
+        @media(max-width:1200px) {
+            display: none;
+        }
 
         @media (max-width:1050px) {
             content: none;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 109px;
+        height: 49px;
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../img/points-about-page.svg) no-repeat center;
+
+        @media(max-width:1200px) {
+            display: none;
         }
     }
 
